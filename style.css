@@ -4,39 +4,135 @@
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-color: yellow;
+    
     margin: 0;
     padding: 0;
-    font-family: nuni;
+    display: flex;
+    flex-direction: column;
+
 }
 a{
     display: block;
     text-decoration: none;
     color: white;
-
-    }
+}
+a:hover{
+    color: #F25F4C;
+}
 
 
 #navbar{
     position: fixed;
     flex-direction: row;
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    height: inherit;
     display: flex;
     margin: 0;
     top: 0px;
     background-color: black;
     color: white;
 }
- li{
-list-style: none;
-text-align: center;
+ ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+li{
+    margin-right: 20px;
+}
+h1, p {
+    display: block;
 }
 
 
 
 #welcome-section{
+    top: 40px;
+    display: flex;
+    flex-direction: row;
     height: 100vh;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+img{
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    
+}
+.descripcion{
+    flex-direction: column;
+}
+#welcome-section h1{
+    font-weight: bold;
+font-size: 64px;
+line-height: 80px;
+}
+
+/* Seccion Proyectos */
+#projects {
+    background-color: white;
+    
+    
+}
+/* #projects p{
+    float: right;
+} */
+.project-tile{
+   
+}
+
+
+/* servicios */
+#services{
+    background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%);
+}
+
+#testimonios{
+    background-color: #0F0E17;
+}
+
+/* Contacto */
+#contact{
+    background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%);
+    padding-bottom: 30vh;
+    height: 60vh;
+    
+
+}
+    
+
+#imagen{
+    background-image: url('img.png');
+    
+}
+
+
+#formulario{
+padding: 48px;
+margin: 10vh 33vw;
+color: white;
+display: flex;
+flex-direction: column;
+background-color: black;
+}
+input{
+    display: block;
+    margin: 5px 0;
+    height: 40px;
+}
+button{
+    display: block;
+    background-color: #FF8906;
+    border: none;
+    height: 40px;
 }
 
 @media only screen and (max-width : 900px) {
@@ -49,10 +145,17 @@ text-align: center;
 footer{
     flex-direction: row;
     width: 100vw;
-    height: 10vh;
+    height: inherit;
     display: flex;
-    margin: 0;
-    top: 0px;
+    
+    
     background-color: black;
     color: white;
+}
+.seccion{
+    display: flex;
+    width: 100vw;
+    
+    height: 50vh;
+    flex-direction: column;
 }
